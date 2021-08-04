@@ -46,6 +46,24 @@ public class Main {
 
     public void checkPrimeNumber() {
 
+        System.out.print("Please enter number to be check for Prime :");
+        int numberToBeChecked = sc.nextInt();
+
+        if(numberToBeChecked ==1 || numberToBeChecked ==2)
+        {
+            System.out.println("Number is Prime\n");
+        }else {
+            for(int i=2; i<numberToBeChecked; i++)
+            {
+                if(numberToBeChecked%i ==0)
+                {
+                    System.out.println("Number is not prime\n");
+                    return;
+                }
+            }
+            System.out.println("Number is Prime\n");
+        }
+
     }
 
 
